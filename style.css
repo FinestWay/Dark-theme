@@ -96,9 +96,9 @@ li a:hover{
 .auto-type {
     background: linear-gradient(to bottom, rgb(238, 91, 91) 30%, blue);
     background-position: bottom;
-    background-repeat: no-repeat;
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 h1 {
