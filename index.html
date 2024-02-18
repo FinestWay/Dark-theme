@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="utility.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <div class="left p-1">
@@ -20,20 +22,30 @@
             <img id="moon-icon" src="images/moon.svg" alt="moon icon">
         </div>
     </nav>
-    <div id="box"></div>
-
+    <div class="container">
+        <h1>I'm a <span class="auto-type"></span> </h1>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         let icon = document.querySelector("#moon-icon");
         icon.addEventListener("click", () => {
             document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")){
+            if (document.body.classList.contains("dark-theme")) {
                 icon.src = "images/sun.svg"
             }
-            else{
+            else {
                 icon.src = "images/moon.svg"
             }
+        });
+        let typed = new Typed(".auto-type", {
+            strings: ["Programmer", "Designer", "Youtuber"],
+            typeSpeed: 140,
+            backSpeed: 140,
+            loop: true
         })
+        console.log(typed);
     </script>
-    <script src="script.js"></script>
 </body>
+
 </html>
