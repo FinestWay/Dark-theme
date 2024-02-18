@@ -22,6 +22,7 @@
     --animation: icon 2s ease-in-out;
     --h1-color: white;
     --hover-color:black;
+    --box-shadow: 150px 30px 250px 30px rgb(238, 35, 35);
 }
 
 #moon-icon {
@@ -108,5 +109,5 @@ h1 {
 
 #light{
     width: 200px;
-    box-shadow: 70px 10px 200px 10px rgb(238, 35, 35) ;
+    box-shadow: var(--box-shadow) ;
 }
