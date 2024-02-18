@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle to dark and light mode</title>
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="left p-1">
+            <ul class="flex gap font-s j-c a-i">
+                <li class="list list1"><a href="#">Home</a></li>
+                <li class="list list2"><a href="#">About</a></li>
+                <li class="list list3"><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="right p-1">
+            <img id="moon-icon" src="images/moon.svg" alt="moon icon">
+        </div>
+    </nav>
+    <div id="box"></div>
+
+    <script>
+        let icon = document.querySelector("#moon-icon");
+        icon.addEventListener("click", () => {
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.svg"
+            }
+            else{
+                icon.src = "images/moon.svg"
+            }
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

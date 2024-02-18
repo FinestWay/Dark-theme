@@ -1,0 +1,23 @@
+.p-1{
+    padding: 20px;
+}
+
+.flex{
+    display: flex;
+}
+
+.gap{
+    gap: 20px;
+}
+
+.font-s{
+    font-size: 20px;
+}
+
+.j-c{
+    justify-content: center;
+}
+
+.a-i{
+    align-items: center;
+}
