@@ -94,7 +94,7 @@ li a:hover{
 }
 
 .auto-type {
-    background: linear-gradient(to bottom, rgb(238, 91, 91) 30%, blue);
+    background: linear-gradient(to bottom, rgb(255, 14, 14) 30%, rgb(255, 136, 0));
     background-position: bottom;
     -webkit-text-fill-color: transparent;
     color: transparent;
@@ -104,4 +104,9 @@ li a:hover{
 
 h1 {
     color: var(--h1-color);
+}
+
+#light{
+    width: 200px;
+    box-shadow: 70px 10px 200px 10px rgb(238, 35, 35) ;
 }
