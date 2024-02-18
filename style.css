@@ -5,7 +5,7 @@
 }
 
 :root {
-    --back-color: lightgrey;
+    --back-color: rgba(206, 202, 190, 0.363);
     --primary-color: #edf2fc;
     --secondary-color: #212121;
     --invert-filter: invert(0.22);
@@ -50,6 +50,8 @@ body {
 }
 
 nav {
+    position: relative;
+    z-index: 10;
     position: sticky;
     top: 0;
     display: flex;
@@ -125,7 +127,7 @@ h1 {
 
 #light{
     width: 200px;
-    box-shadow: 150px 30px 200px 20px rgb(238, 35, 35);
+    box-shadow: 100px 50px 250px 50px rgb(205 0 0);
 }
 
 #first-section{
